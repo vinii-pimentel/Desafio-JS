@@ -1,0 +1,269 @@
+//Vini Bispo por favor copia cada exercicio e roda na sua IDE favorita, Codesandbox não me deixa colocar arquivo Publico mais
+
+<script>
+//Ex:1
+let condicao = prompt("Ainda é dia ou já é noite?", "Escreva somente Dia ou Noite");
+	  condicao = condicao.toLowerCase();
+      
+  if (condicao == "dia") {
+    console.log("Claro!");
+  }
+  
+  else if (condicao == "noite") {
+  console.log("De Noite!");  
+}
+</script>
+//////////////
+//////////////
+//////////////
+//////////////
+<script>
+//Ex:2
+let num = prompt("Contador de números pares: Insira um número entre 0 e 20");
+let par;
+
+  function isEven(num) {
+ 		if (num % 2 === 0){
+ 		  par = true;
+ 		}
+ 		else{
+ 		  par = false;
+ 		}
+	}
+
+  isEven(num);
+  
+  if (num >= 0 && num <= 20){
+    	if (par == true){
+    	for ( let i = num; i <= 20; i+=2 )
+        	{
+       		console.log(i);
+        	}
+    	}
+        
+    	else if (par == false) {
+        console.log("Número impar");
+    	}
+  }
+
+  else {
+    console.log("Valor inválido!");
+  }
+</script>
+//////////////
+//////////////
+//////////////
+//////////////
+<script>
+//Ex:3
+  function myFunction() {
+ 		console.log("Qualquer Groselha!");        }
+  }
+</script>
+//////////////
+//////////////
+//////////////
+//////////////
+<script>
+//Ex:4
+let nome;
+
+  function nomeFeio() {
+    nome = prompt("Escreve teu nome ai!");
+  }
+  
+  nomeFeio();
+  
+  console.log(nome);
+</script>
+// OU enviando Parametro e fazendo return pra caso tu queira repetir sua variável várias vezes hehe
+<script>
+//Ex:4
+let nome = prompt("Escreve teu nome ai!");
+
+  function nomeFeio(nome) {
+   return nome;
+  }
+  
+  nomeFeio(nome);
+  
+  console.log(nome);
+</script>
+
+//////////////
+//////////////
+//////////////
+//////////////
+<script>
+//Ex:5
+let nome = prompt("Escreve teu nome ai!");
+let idade = prompt("Agora a idade condenado!");
+let estilo = prompt("Que porcaria vc ouve?");
+
+  function nomeFeio(nome, idade, estilo) {
+   return nome;
+   return idade;
+   return estilo
+  }
+  
+  nomeFeio(nome, idade, estilo);
+  
+  console.log(nome);
+  console.log(idade);
+  console.log(estilo);
+</script>
+
+//OU só inserido o valor na variável pra ficar repetindo menos palavras!!
+<script>
+//Ex:5
+let nome;
+let idade;
+let estilo;
+
+  function nomeFeio() {
+    nome = prompt("Escreve teu nome ai!");
+    idade = prompt("Agora a idade condenado!");
+    estilo = prompt("Que porcaria vc ouve?");
+  }
+  
+  nomeFeio();
+  
+  console.log(nome);
+  console.log(idade);
+  console.log(estilo);
+
+</script>
+//////////////
+//////////////
+//////////////
+//////////////
+<script>
+//Ex:6
+let filme;
+let musica;
+
+  function denovoViniBispo() {
+    filme = prompt("Escreve teu filme!");
+    musica = prompt("Agora aquela música que te lembra a morena?");
+  }
+  
+  denovoViniBispo();
+  
+  console.log(filme);
+  console.log(musica);
+</script>
+//////////////
+//////////////
+<script>
+//Ex:7
+let num = prompt("Insira o número que deve ser triplicado (mas não sonhe, isso não irá triplicar seu dinheiro");
+
+
+  function tripleBaby(num) {
+   	return num*3;
+	}
+
+ 
+  console.log(tripleBaby(num));
+</script>
+//////////////
+//////////////
+<script>
+//Ex:8
+let num = prompt("JÁ FIZ NA QUESTÃO 2! hahaha");
+let booleaninho;
+
+  function isBoolean(num) {
+ 		if (num > 2){
+ 		  booleaninho = true;
+         return booleaninho;
+ 		}
+ 		else{
+ 		booleaninho = false;
+         return booleaninho;
+ 		}
+	}
+
+  //isBoolean(num);
+
+    console.log(isBoolean(num));
+</script>
+//////////////
+//////////////
+<script>
+//Ex:9
+let array = []
+array[0] = prompt("Bora de Array");
+array[1] = prompt("De novo");
+array[2] = prompt("De novo");
+array[3] = prompt("De novo");
+array[4] = prompt("Agora acabou");
+
+    console.log(array);
+  
+</script>
+//////////////
+//////////////
+<script>
+//Ex:10
+let array = ["a","b","c","d","e"];
+array.unshift(prompt("No comecinho"));
+
+    console.log(array);
+  
+</script>
+//////////////
+//////////////
+<script>
+//Ex:11
+let array = ["a","b","c","d","e"];
+array.pop();
+
+    console.log(array);
+  
+</script>
+//////////////
+//////////////
+<script>
+//Ex:12
+let array = ["a","b","c","d","e"];
+array.push(prompt("Penúltimo"));
+array.push(prompt("Último"));
+
+    console.log(array);
+  
+</script>
+//////////////
+//////////////
+//Ex:13
+let array = ["a","b","c","d","e"];
+array.shift();
+
+    console.log(array);
+  
+</script>
+//////////////
+//////////////
+<script>
+//Ex:14
+let array = ["a","b","c","d","e"];
+array.splice(2, 0, "João",  "Maria",  "Jose",  "Pedro");
+
+    console.log(array);
+  
+</script>
+
+//////////////
+//////////////
+<script>
+//Ex:15
+const array = [7,5,6,3,8,9,2,1,4];
+array.sort();
+
+ console.log(array);
+ 
+//Trabalho extra pois quis testar em descrescente tbm! hehe
+
+const yarra = array.toSorted().reverse();
+   console.log(yarra);
+</script>
